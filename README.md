@@ -1,4 +1,4 @@
-# AI Web Scraper & Parser
+# AI Web Crawler, Scraper & Parser
 
 A modular Web Scraper and Parser application built to crawl websites, extract and clean DOM content, and leverage a local Llama 3.1 model to parse data directly into structured Markdown tables based on custom user prompts.
 
