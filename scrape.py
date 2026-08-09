@@ -21,6 +21,27 @@ def scrape_page(url):
     driver.quit()
     return html
 
+
+# --- Optional: CAPTCHA Solver Integration ---
+    # Selenium alone cannot solve CAPTCHAs.
+    # If you want to integrate an external solver (like 2Captcha or Anti-Captcha):
+    # 1. Sign up at the solver service website.
+    # 2. Install their Python SDK (e.g., pip install 2captcha-python).
+    # 3. Get your API key.
+    # 4. Replace the placeholder code below with the snippet provided by the solver service.
+    # 5. Uncomment it to enable CAPTCHA solving.
+    #
+    # Example (placeholder only):
+    # from twocaptcha import TwoCaptcha
+    # solver = TwoCaptcha('YOUR_API_KEY')
+    # result = solver.recaptcha(
+    #     sitekey='SITE_KEY',
+    #     url=website
+    # )
+    # driver.execute_script(
+    #     f'document.getElementById("g-recaptcha-response").value="{result["code"]}"'
+
+
 def crawl_site(base_url, max_pages=20):
     """Crawl a site starting from base_url, following internal links."""
     to_visit = [base_url]
