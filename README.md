@@ -13,10 +13,9 @@ A modular Web Scraper and Parser application built to crawl websites, extract an
 
 ## How It Works
 
-```text
+
 <img width="1408" height="768" alt="image" src="https://github.com/user-attachments/assets/6e930230-8e5f-4f5a-9ff8-f1e3c0789e86" />
 
-```
 
 1. **Request & Initialization**: The user selects a target scope and triggers the web action inside the Streamlit frontend (`main.py`).
 2. **Browser Emulation & Crawling**: The execution layer (`scrape.py`) fires up a Chrome instance using Selenium WebDriver to gather source files. Depending on the operational depth chosen, it isolates specific sub-links within the domain boundary.
